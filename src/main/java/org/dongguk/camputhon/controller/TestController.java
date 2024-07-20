@@ -21,6 +21,6 @@ public class TestController {
 
     @GetMapping("/error")
     public ResponseDto<?> error() {
-        throw new CommonException(ErrorCode.SERVER_ERROR);
+        throw new CommonException(ErrorCode.TEST_ERROR);
     }
 }
