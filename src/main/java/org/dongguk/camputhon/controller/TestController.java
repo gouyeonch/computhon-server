@@ -16,7 +16,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     @GetMapping("/test")
     public ResponseDto<?> test() {
-        return ResponseDto.ok("Hello World");
+        throw new CommonException(ErrorCode.TEST_ERROR);
+    }
+
+    @GetMapping("/hello")
+    public ResponseDto<?> hello() {
+        return ResponseDto.ok("Hello World!");
     }
 
     @GetMapping("/error")
