@@ -1,9 +1,9 @@
 package org.dongguk.camputhon.dto.common;
 
-import com.kkokkomu.short_news.exception.ErrorCode;
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.ConstraintViolationException;
 import lombok.Getter;
+import org.dongguk.camputhon.exception.ErrorCode;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 
